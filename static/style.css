@@ -21,7 +21,7 @@ body {
     justify-content: flex-end;
 }
 header {
-    background-image: url('https://cdn.pling.com/img/5/7/e/8/af676a18db7ceca5023b9e260b7371ad8ba1.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp2757874.gif');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -32,7 +32,7 @@ header {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.2);
 }
 .description {
 	left: 50%;
@@ -78,6 +78,10 @@ header {
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	margin-bottom: 16px;
+    display: block;
+    border:none;
+    border-radius: 8px;
+    width: 80%;
 }
 .features .form-control,
 .features input {
