@@ -11,4 +11,8 @@ def main():
 def contact():
     return render_template('contact.html')
 
+@app.route('/service', methods=['GET', 'POST'])
+def service():
+    return render_template('service.html')
+
 app.run(host='127.0.0.1', port=8000, debug=True)
