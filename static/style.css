@@ -4,7 +4,7 @@ body {
     background: #fcf1dc;
 }
 .navbar {
-    background:#0f1227;
+    background:#ad102d;
 }
 .nav-link,
 .navbar-brand {
@@ -96,7 +96,7 @@ header {
     border: 1px solid #333;
 }
 .page-footer {
-    background-color: #0f1227;
+    background-color: #12121C;
     color: #ccc;
     padding: 60px 0 30px;
 }
