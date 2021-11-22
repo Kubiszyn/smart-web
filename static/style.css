@@ -1,10 +1,10 @@
 body {
     padding: 0;
     margin: 0;
-    background: #f2f6e9;
+    background: #fcf1dc;
 }
 .navbar {
-    background:grey;
+    background:#0f1227;
 }
 .nav-link,
 .navbar-brand {
@@ -42,11 +42,11 @@ header {
 	text-align: center;
 }
 .description h1 {
-	color:grey;
+	color:#ad102d;
 }
-.description p {
-	color: #fff;
-	font-size: 1.3rem;
+.description h3 {
+	color: #fcf1dc;
+	
 	line-height: 1.5;
 }
 .description button {
@@ -74,9 +74,7 @@ header {
 	text-transform: uppercase;
 }
 .features img {
-	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	
 	margin-bottom: 16px;
     display: block;
     border:none;
@@ -98,7 +96,7 @@ header {
     border: 1px solid #333;
 }
 .page-footer {
-    background-color: #222;
+    background-color: #0f1227;
     color: #ccc;
     padding: 60px 0 30px;
 }
