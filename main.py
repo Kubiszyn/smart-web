@@ -15,4 +15,12 @@ def contact():
 def service():
     return render_template('service.html')
 
+@app.route('/package', methods=['GET', 'POST'])
+def package():
+    return render_template('package.html')
+
+@app.route('/buysell', methods=['GET', 'POST'])
+def buysell():
+    return render_template('buysell.html')
+
 app.run(host='127.0.0.1', port=8000, debug=True)
