@@ -1,7 +1,18 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
+from flask_mail import Mail, Message
+from dotenv import load_dotenv
+import smtplib
+import os
 
 app = Flask(__name__)
 app.secret_key = 'secret'
+app.config['MAIL_SERVER']='poczta.interia.pl'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USERNAME'] = 'testweb123@interia.pl'
+app.config['MAIL_PASSWORD'] = os.environ.get('PASSWORD')
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail = Mail(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
@@ -9,7 +20,19 @@ def main():
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html')
+    if request.method == 'POST' and 'name' in request.form and 'email' in request.form and 'description' in request.form:
+        name = str(request.form['name'])
+        email = str(request.form['email'])
+        description = str(request.form['description'])
+        msg = Message(
+                'Hello',
+                sender ='testweb123@interia.pl',
+                recipients = ['#']
+               )
+        msg.body = description
+        mail.send(msg)
+    else:
+        return render_template('contact.html')
 
 @app.route('/service', methods=['GET', 'POST'])
 def service():

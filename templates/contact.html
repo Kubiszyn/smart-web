@@ -45,18 +45,19 @@
             
             <div class="col-lg-6 col-md-6 col-sm-12">
               <h3 class="feature-title" margin-left:100px;>Any questions?</h3>
+              <form action="{{ url_for('contact') }}"  method="post">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name" name="">
+                <input type="text" class="form-control" placeholder="Name" id="name">
               </div>
               <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email Address" name="email">
+                  <input type="email" class="form-control" placeholder="Email Address" id="email">
               </div>
               <div class="form-group">
-                  <textarea class="form-control" rows="10"></textarea>
+                  <textarea class="form-control" rows="10" id="description"></textarea>
               </div>
-              <input  type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+              <input  type="submit" class="btn btn-secondary btn-block" value="Send" >
             </div>
-
+          </form>
         </div>
     </div>
     <footer class="page-footer">
@@ -68,9 +69,11 @@
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
               <h6 class="text-uppercase font-weight-bold">Contact</h6>
-              <p>Al. Lotników Polskich 142
-              <br/>15a9sawuf81@temporary-mail.net
-              <br/>67 610 17990</p>
+              <p> Address: 3-go Maja 38 37-500 Jarosław
+              <br/>E-mail: biurosmartcomp@gmail.com
+              <br/>TEL: +48 604 770 025</br>
+              Profesjonalny serwis komputerowy w Jarosławiu. Skup oraz sprzedaż używanego sprzętu
+              3go Maja 38 PARTER (dawny infores)</br></p>
           </div>
       <div>
       <div class="footer-copyright text-center">© 2021 Copyright: Website made by Denisa and Dawid</div>
